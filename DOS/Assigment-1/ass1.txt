@@ -1,0 +1,135 @@
+/// Q1 ///
+student@iteradmin-Vostro-3268:~$ mkdir DOS_2241004177
+student@iteradmin-Vostro-3268:~$ cd DOS_2241004177
+student@iteradmin-Vostro-3268:~/DOS_2241004177$ mkdir DOSass1
+student@iteradmin-Vostro-3268:~/DOS_2241004177$ cd DOSass1
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ mkdir dir1
+//////
+
+/// Q2 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ mkdir dir2
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ cd dir2
+//////
+
+/// Q3 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177$ rmdir DOSass1/dir2
+//////
+
+/// Q4 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat >file1.txt
+Sai Lochan Dash
+2241004177
+CSE
+Sem 5
+Sec 28
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat file1.txt
+Sai Lochan Dash
+2241004177
+CSE
+Sem 5
+Sec 28
+//////
+
+/// Q5 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat >file2.txt
+1st sem: 7.71
+2nd sem: 8.08
+3rd sem: 8.50
+4th sem: 8.20
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat file2.txt
+1st sem: 7.71
+2nd sem: 8.08
+3rd sem: 8.50
+4th sem: 8.20
+//////
+
+/// Q6 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat >file3.txt
+//////
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat file1.txt file2.txt > file3.txt
+
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ mv file2.txt markinfo.txt
+
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat file1.txt > reginfo.txt
+
+/// Q13 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ ls -i
+27000866 file1.txt  27000863 file3.txt  27000867 markinfo.txt  27000869 reginfo.txt
+//////
+
+/// Q14 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ rm file1.txt
+//////
+
+/// Q15 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ wc markinfo.txt
+ 4 12 56 markinfo.txt
+//////
+
+/// Q16 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat >Personalinfo.txt
+Sai Lochan Dash
+2241004177
+INDIA                                
+//////
+
+/// Q17 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ tac markinfo.txt
+4th Semester: 8.20
+3rd Semester: 8.50
+2nd Semester: 8.08
+1st Semester: 7.71
+//////
+
+/// Q18 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ ls -1 | grep -v '^filelist$' > filelist
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ ls -1 | grep -v '^filelist$'
+file3.txt 
+reginfo.txt 
+Personalinfo.txt 
+markinfo.txt
+//////
+
+/// Q19 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1/filelist$ chmod a+w reginfo.txt
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1/filelist$ chmod g-w reginfo.txt
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1/filelist$ chmod a+rwx reginfo.txt
+//////
+
+/// Q20 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ date;pwd
+Friday 27 September 2024 02:52:22 PM IST
+/home/student/DOS_2241004177/DOSass1/dir1
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ date;pwd | wc -l
+Friday 27 September 2024 02:54:25 PM IST
+1
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ date;pwd | wc -l
+2
+//////
+
+/// Q21 ///
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo *
+file3.txt markinfo.txt Personalinfo.txt reginfo.txt
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo ***
+file3.txt markinfo.txt Personalinfo.txt reginfo.txt
+student@iteradmin-Vostro-3268:~DOS_2241004177/DOSass1$ echo '***'
+***
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo \*\*\*
+***
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo */*
+dir1/filelist
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo Don't do this
+>
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo "Don't do this"
+Don't do this
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo Hello # World
+Hello
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo date
+date
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo 'date'
+date
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo "date"
+date
+student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1$ echo `date`
+Friday 27 September 2024 03:07:29 PM IST
+//////
