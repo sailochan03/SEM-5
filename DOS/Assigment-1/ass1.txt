@@ -45,11 +45,14 @@ student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat file2.txt
 
 /// Q6 ///
 student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat >file3.txt
-//////
 student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat file1.txt file2.txt > file3.txt
+//////
 
+/// Q7 ///
 student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ mv file2.txt markinfo.txt
+/////
 
+///
 student@iteradmin-Vostro-3268:~/DOS_2241004177/DOSass1/dir1$ cat file1.txt > reginfo.txt
 
 /// Q13 ///
