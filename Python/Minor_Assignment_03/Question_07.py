@@ -1,6 +1,6 @@
 def is_vowel(char):
     char.lower()
-    if char in 'aeiou':
+    if char in 'aeiouAEIOU':
         return True
     return False
     

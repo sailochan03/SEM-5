@@ -1,4 +1,4 @@
-def palindrome_checker(s):
+def is_palindrome(s):
     reverse = ""
     for char in s:
         reverse = char + reverse
@@ -8,4 +8,4 @@ def palindrome_checker(s):
     return False
 
 s = input("Enter a string: ")
-print(f"Is '{s}' a palindrome? : {palindrome_checker(s)}")
+print(f"Is '{s}' a palindrome? : {is_palindrome(s)}")
